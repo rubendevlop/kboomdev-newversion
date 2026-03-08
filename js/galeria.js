@@ -3,95 +3,67 @@
 // ================================
 
 const projectData = {
-    project1: {
-      title: "Proyecto Prisma",
-      description:
-        "Landing page moderna diseñada para presentar una marca profesional con una estética visual fuerte y una estructura pensada para captar atención.",
-      items: [
-        "Diseño visual moderno",
-        "Secciones claras",
-        "Hero impactante",
-        "Optimización visual",
-        "Experiencia responsive",
-        "Enfoque en conversión"
-      ],
-      link: "#"
-    },
+  project1: {
+    title: "Nicosia y Nicosia",
+    description:
+      "Sitio web profesional para una empresa de servicios de construcción, electricidad y grúas con camiones, diseñado para mostrar servicios, generar confianza y facilitar el contacto con clientes.",
+    items: [
+      "Servicios de construcción",
+      "Instalaciones eléctricas",
+      "Grúas con camiones",
+      "Presentación de proyectos",
+      "Contacto directo con clientes",
+      "Diseño optimizado para móviles"
+    ],
+    link: "https://nicosiaynicosia-sh.com"
+  },
   
     project2: {
-      title: "Proyecto Nova",
+      title: "Estudio ARQ",
       description:
-        "Sitio web institucional pensado para empresas o profesionales que necesitan transmitir confianza y mostrar servicios de forma clara.",
+        "Landing page desarrollada para un estudio de arquitectura, enfocada en mostrar proyectos, servicios y transmitir una imagen profesional y moderna.",
       items: [
-        "Presentación de servicios",
-        "Imagen profesional",
-        "Sección contacto",
-        "Diseño moderno",
-        "Estructura clara",
-        "Experiencia responsive"
+        "Presentación de proyectos",
+        "Sección de servicios",
+        "Diseño visual moderno",
+        "Imagen profesional del estudio",
+        "Optimizada para dispositivos móviles",
+        "Contacto directo con clientes"
       ],
-      link: "#"
+      link: "https://estudioarq.netlify.app"
     },
-  
+
     project3: {
-      title: "Proyecto Control",
+      title: "Panadería Delicias Tuc",
       description:
-        "Aplicación web orientada a procesos internos y gestión de información para organizar tareas y datos.",
+        "Landing page desarrollada para una panadería artesanal de Tucumán. Presenta productos, información del local y contacto rápido para atraer nuevos clientes.",
       items: [
-        "Panel administrativo",
-        "Gestión de datos",
-        "Interfaz funcional",
-        "Estructura escalable",
-        "Experiencia clara",
-        "Organización de procesos"
+        "Diseño visual atractivo",
+        "Sección de productos",
+        "Información del local",
+        "Optimizada para móviles",
+        "Contacto rápido con clientes",
+        "Estructura clara para negocios"
       ],
-      link: "#"
+      link: "https://panaderia-delicias-tuc.netlify.app"
     },
   
     project4: {
-      title: "Proyecto Store",
+      title: "Ferretería El Tornillo",
       description:
-        "E-commerce visualmente atractivo diseñado para mostrar productos de forma ordenada y facilitar la experiencia de compra.",
+        "Tienda online desarrollada para una ferretería, diseñada para mostrar herramientas y productos de forma ordenada, facilitando la búsqueda y la compra de los clientes.",
       items: [
-        "Catálogo de productos",
-        "Fichas visuales",
+        "Catálogo de herramientas y productos",
         "Organización por categorías",
-        "Experiencia visual moderna",
-        "Diseño orientado a ventas",
-        "Escalable"
-      ],
-      link: "#"
-    },
-  
-    project5: {
-      title: "Proyecto Impacto",
-      description:
-        "Landing page enfocada en captar atención rápidamente con una propuesta clara y visualmente potente.",
-      items: [
-        "Diseño visual fuerte",
-        "Mensaje claro",
-        "Estructura de conversión",
+        "Fichas de productos detalladas",
+        "Diseño optimizado para ventas",
         "Experiencia responsive",
-        "Optimización visual",
-        "Secciones estratégicas"
+        "Contacto y consulta de productos"
       ],
-      link: "#"
+      link: "https://ferreteriaeltornillo.netlify.app"
     },
   
-    project6: {
-      title: "Proyecto Gestión",
-      description:
-        "Sistema web orientado a organizar procesos internos, datos y tareas de forma clara y funcional.",
-      items: [
-        "Sistema administrativo",
-        "Gestión de información",
-        "Interfaz clara",
-        "Organización de procesos",
-        "Escalabilidad",
-        "Experiencia funcional"
-      ],
-      link: "#"
-    }
+  
   };
   
   

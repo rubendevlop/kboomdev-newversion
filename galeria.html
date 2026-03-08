@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KBOOMDEV | Galería</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-black text-white overflow-x-hidden">
 
   <!-- ================================ -->
   <!-- FONDO DECORATIVO -->
   <!-- ================================ -->
   <div class="fixed inset-0 -z-10 pointer-events-none">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,122,0,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(255,122,0,0.12),transparent_30%)]"></div>
-    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:36px_36px] opacity-30"></div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,122,0,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(255,122,0,0.12),transparent_30%)]">
+    </div>
+    <div
+      class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:36px_36px] opacity-30">
+    </div>
     <div class="absolute top-16 left-[-80px] h-64 w-64 rounded-full bg-orange-500/20 blur-3xl"></div>
     <div class="absolute bottom-10 right-[-100px] h-80 w-80 rounded-full bg-orange-500/10 blur-3xl"></div>
   </div>
@@ -23,13 +29,10 @@
   <!-- ================================ -->
   <header id="header" class="fixed top-0 left-0 z-50 w-full">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <nav class="mt-3 flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 px-4 py-3 backdrop-blur-md">
+      <nav
+        class="mt-3 flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 px-4 py-3 backdrop-blur-md">
         <a href="index.html" class="flex items-center gap-3 py-1">
-          <img
-            src="/asseets/logo.png"
-            alt="Logo KBOOMDEV"
-            class="h-20 lg:h-24 w-auto object-contain"
-          />
+          <img src="/asseets/logo.png" alt="Logo KBOOMDEV" class="h-20 lg:h-24 w-auto object-contain" />
         </a>
 
         <div class="hidden md:flex items-center gap-8 text-sm font-medium">
@@ -41,39 +44,31 @@
         </div>
 
         <div class="hidden md:flex items-center gap-3">
-          <a
-            href="contacto.html"
-            class="rounded-xl bg-orange-500 px-4 py-2 text-sm font-bold text-black transition hover:scale-105 hover:bg-orange-400"
-          >
+          <a href="contacto.html"
+            class="rounded-xl bg-orange-500 px-4 py-2 text-sm font-bold text-black transition hover:scale-105 hover:bg-orange-400">
             Agendar reunión
           </a>
         </div>
 
-        <button
-          id="menuBtn"
+        <button id="menuBtn"
           class="md:hidden rounded-xl border border-white/10 bg-white/5 p-2 transition hover:border-orange-500 hover:text-orange-500"
-          aria-label="Abrir menú"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="1.8">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </nav>
 
-      <div
-        id="mobileMenu"
-        class="hidden mt-3 rounded-2xl border border-white/10 bg-black/90 p-4 backdrop-blur-md md:hidden"
-      >
+      <div id="mobileMenu"
+        class="hidden mt-3 rounded-2xl border border-white/10 bg-black/90 p-4 backdrop-blur-md md:hidden">
         <div class="flex flex-col gap-3 text-sm">
           <a href="index.html" class="transition hover:text-orange-500">Inicio</a>
           <a href="servicios.html" class="transition hover:text-orange-500">Servicios</a>
           <a href="galeria.html" class="text-orange-500">Galería</a>
           <a href="sobre-nosotros.html" class="transition hover:text-orange-500">Sobre nosotros</a>
           <a href="contacto.html" class="transition hover:text-orange-500">Contacto</a>
-          <a
-            href="contacto.html"
-            class="mt-2 rounded-xl bg-orange-500 px-4 py-3 text-center font-bold text-black"
-          >
+          <a href="contacto.html" class="mt-2 rounded-xl bg-orange-500 px-4 py-3 text-center font-bold text-black">
             Agendar reunión
           </a>
         </div>
@@ -93,7 +88,8 @@
       <!-- ================================ -->
       <section class="mb-16">
         <div class="max-w-4xl">
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-xs text-orange-400 sm:text-sm">
+          <div
+            class="mb-5 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-xs text-orange-400 sm:text-sm">
             <span class="h-2 w-2 rounded-full bg-orange-500"></span>
             Proyectos realizados · KBOOMDEV
           </div>
@@ -111,7 +107,7 @@
         </div>
       </section>
 
-    
+
 
       <!-- ================================ -->
       <!-- GRID DE PROYECTOS -->
@@ -122,39 +118,31 @@
           <!-- ================================ -->
           <!-- PROYECTO 1 -->
           <!-- ================================ -->
-          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
             <div class="relative">
-              <img
-                src="https://placehold.co/800x500/111111/ffffff?text=Proyecto+1"
-                alt="Proyecto 1"
-                class="h-56 w-full object-cover"
-              />
-              <span class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
-                Landing page
+              <img src="/asseets/nicosia.png" alt="Nicosia y Nicosia" class="h-56 w-full object-cover" />
+              <span
+                class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
+                Web de negocio
               </span>
             </div>
 
             <div class="p-6">
-              <h2 class="text-2xl font-black text-white">Proyecto Prisma</h2>
+              <h2 class="text-2xl font-black text-white">Nicosia y Nicosia</h2>
               <p class="mt-3 text-sm leading-relaxed text-zinc-300">
-                Landing page moderna pensada para mostrar una marca profesional con una estética visual fuerte.
+                Sitio web profesional desarrollado para una empresa, enfocado en mostrar servicios, transmitir confianza
+                y mejorar su presencia digital.
               </p>
 
               <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400"
-                >
+                <a href="https://nicosiaynicosia-sh.com" target="_blank" rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400">
                   Ver sitio
                 </a>
 
-                <button
-                  type="button"
-                  data-project="project1"
-                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-                >
+                <button type="button" data-project="project1"
+                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
                   Ver detalle
                 </button>
               </div>
@@ -164,39 +152,31 @@
           <!-- ================================ -->
           <!-- PROYECTO 2 -->
           <!-- ================================ -->
-          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
             <div class="relative">
-              <img
-                src="https://placehold.co/800x500/111111/ffffff?text=Proyecto+2"
-                alt="Proyecto 2"
-                class="h-56 w-full object-cover"
-              />
-              <span class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
-                Web de negocio
+              <img src="/asseets/arq.png" alt="Estudio ARQ" class="h-56 w-full object-cover" />
+              <span
+                class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
+                Landing page
               </span>
             </div>
 
             <div class="p-6">
-              <h2 class="text-2xl font-black text-white">Proyecto Nova</h2>
+              <h2 class="text-2xl font-black text-white">Estudio ARQ</h2>
               <p class="mt-3 text-sm leading-relaxed text-zinc-300">
-                Sitio web pensado para mostrar servicios, reforzar confianza y mejorar la imagen digital.
+                Landing page profesional para un estudio de arquitectura, diseñada para mostrar proyectos, servicios y
+                fortalecer la presencia digital del estudio.
               </p>
 
               <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400"
-                >
+                <a href="https://estudioarq.netlify.app" target="_blank" rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400">
                   Ver sitio
                 </a>
 
-                <button
-                  type="button"
-                  data-project="project2"
-                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-                >
+                <button type="button" data-project="project2"
+                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
                   Ver detalle
                 </button>
               </div>
@@ -206,39 +186,31 @@
           <!-- ================================ -->
           <!-- PROYECTO 3 -->
           <!-- ================================ -->
-          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
             <div class="relative">
-              <img
-                src="https://placehold.co/800x500/111111/ffffff?text=Proyecto+3"
-                alt="Proyecto 3"
-                class="h-56 w-full object-cover"
-              />
-              <span class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
-                Sistema web
+              <img src="/asseets/panaderia.png" alt="Panadería Delicias Tuc" class="h-56 w-full object-cover" />
+              <span
+                class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
+                Landing page
               </span>
             </div>
 
             <div class="p-6">
-              <h2 class="text-2xl font-black text-white">Proyecto Control</h2>
+              <h2 class="text-2xl font-black text-white">Panadería Delicias Tuc</h2>
               <p class="mt-3 text-sm leading-relaxed text-zinc-300">
-                Aplicación web orientada a procesos, organización interna y gestión de información.
+                Landing page diseñada para una panadería artesanal de Tucumán. Presenta productos, información del local
+                y contacto rápido para atraer nuevos clientes.
               </p>
 
               <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400"
-                >
+                <a href="https://panaderia-delicias-tuc.netlify.app" target="_blank" rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400">
                   Ver sitio
                 </a>
 
-                <button
-                  type="button"
-                  data-project="project3"
-                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-                >
+                <button type="button" data-project="project3"
+                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
                   Ver detalle
                 </button>
               </div>
@@ -248,129 +220,37 @@
           <!-- ================================ -->
           <!-- PROYECTO 4 -->
           <!-- ================================ -->
-          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
             <div class="relative">
-              <img
-                src="https://placehold.co/800x500/111111/ffffff?text=Proyecto+4"
-                alt="Proyecto 4"
-                class="h-56 w-full object-cover"
-              />
-              <span class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
+              <img src="/asseets/f-tornillo.png" alt="Ferretería El Tornillo" class="h-56 w-full object-cover" />
+              <span
+                class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
                 E-commerce
               </span>
             </div>
 
             <div class="p-6">
-              <h2 class="text-2xl font-black text-white">Proyecto Store</h2>
+              <h2 class="text-2xl font-black text-white">Ferretería El Tornillo</h2>
               <p class="mt-3 text-sm leading-relaxed text-zinc-300">
-                Tienda online visualmente atractiva para mostrar productos y facilitar la venta digital.
+                Tienda online desarrollada para una ferretería, diseñada para mostrar productos, facilitar la compra y
+                mejorar la presencia digital del negocio.
               </p>
 
               <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400"
-                >
+                <a href="https://ferreteriaeltornillo.netlify.app" target="_blank" rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400">
                   Ver sitio
                 </a>
 
-                <button
-                  type="button"
-                  data-project="project4"
-                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-                >
+                <button type="button" data-project="project4"
+                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
                   Ver detalle
                 </button>
               </div>
             </div>
           </article>
-
-          <!-- ================================ -->
-          <!-- PROYECTO 5 -->
-          <!-- ================================ -->
-          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
-            <div class="relative">
-              <img
-                src="https://placehold.co/800x500/111111/ffffff?text=Proyecto+5"
-                alt="Proyecto 5"
-                class="h-56 w-full object-cover"
-              />
-              <span class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
-                Landing page
-              </span>
-            </div>
-
-            <div class="p-6">
-              <h2 class="text-2xl font-black text-white">Proyecto Impacto</h2>
-              <p class="mt-3 text-sm leading-relaxed text-zinc-300">
-                Página orientada a captar atención con una propuesta clara, directa y visualmente fuerte.
-              </p>
-
-              <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400"
-                >
-                  Ver sitio
-                </a>
-
-                <button
-                  type="button"
-                  data-project="project5"
-                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-                >
-                  Ver detalle
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- ================================ -->
-          <!-- PROYECTO 6 -->
-          <!-- ================================ -->
-          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/5">
-            <div class="relative">
-              <img
-                src="https://placehold.co/800x500/111111/ffffff?text=Proyecto+6"
-                alt="Proyecto 6"
-                class="h-56 w-full object-cover"
-              />
-              <span class="absolute left-4 top-4 rounded-full border border-orange-500/20 bg-orange-500/90 px-3 py-1 text-xs font-bold text-black">
-                Sistema web
-              </span>
-            </div>
-
-            <div class="p-6">
-              <h2 class="text-2xl font-black text-white">Proyecto Gestión</h2>
-              <p class="mt-3 text-sm leading-relaxed text-zinc-300">
-                Solución digital hecha para organizar procesos, datos y tareas de manera más eficiente.
-              </p>
-
-              <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400"
-                >
-                  Ver sitio
-                </a>
-
-                <button
-                  type="button"
-                  data-project="project6"
-                  class="project-open inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-                >
-                  Ver detalle
-                </button>
-              </div>
-            </div>
-          </article>
-
+          
         </div>
       </section>
 
@@ -392,17 +272,13 @@
             </p>
 
             <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="contacto.html"
-                class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-6 py-4 font-bold text-black transition hover:scale-105 hover:bg-orange-400"
-              >
+              <a href="contacto.html"
+                class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-6 py-4 font-bold text-black transition hover:scale-105 hover:bg-orange-400">
                 Agendar reunión
               </a>
 
-              <a
-                href="servicios.html"
-                class="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-6 py-4 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-              >
+              <a href="servicios.html"
+                class="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-6 py-4 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
                 Ver servicios
               </a>
             </div>
@@ -416,14 +292,10 @@
   <!-- ================================ -->
   <!-- MODAL DE PROYECTO -->
   <!-- ================================ -->
-  <div
-    id="projectModal"
-    class="pointer-events-none fixed inset-0 z-[60] flex items-center justify-center bg-black/70 px-4 opacity-0 backdrop-blur-sm transition duration-300"
-  >
-    <div
-      id="projectModalPanel"
-      class="w-full max-w-3xl scale-95 rounded-[2rem] border border-white/10 bg-zinc-950 p-6 transition duration-300"
-    >
+  <div id="projectModal"
+    class="pointer-events-none fixed inset-0 z-[60] flex items-center justify-center bg-black/70 px-4 opacity-0 backdrop-blur-sm transition duration-300">
+    <div id="projectModalPanel"
+      class="w-full max-w-3xl scale-95 rounded-[2rem] border border-white/10 bg-zinc-950 p-6 transition duration-300">
       <div class="flex items-start justify-between gap-4">
         <div>
           <p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-400">
@@ -432,12 +304,11 @@
           <h3 id="projectModalTitle" class="mt-2 text-2xl font-black text-white"></h3>
         </div>
 
-        <button
-          id="closeProjectModal"
+        <button id="closeProjectModal"
           class="rounded-xl border border-white/10 bg-white/5 p-2 text-white transition hover:border-orange-500 hover:text-orange-400"
-          aria-label="Cerrar modal"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          aria-label="Cerrar modal">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="1.8">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -451,20 +322,13 @@
       </div>
 
       <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-        <a
-          id="projectModalLink"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-5 py-3 font-bold text-black transition hover:bg-orange-400"
-        >
+        <a id="projectModalLink" href="#" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-5 py-3 font-bold text-black transition hover:bg-orange-400">
           Ver sitio
         </a>
 
-        <a
-          href="contacto.html"
-          class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-        >
+        <a href="contacto.html"
+          class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
           Quiero algo parecido
         </a>
       </div>
@@ -477,4 +341,5 @@
   <script src="js/main.js"></script>
   <script src="js/galeria.js"></script>
 </body>
+
 </html>
