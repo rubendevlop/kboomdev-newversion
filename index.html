@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KBOOMDEV | Inicio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- Fondo decorativo -->
+  <div class="fixed inset-0 -z-10 pointer-events-none">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,122,0,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(255,122,0,0.12),transparent_30%)]"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:36px_36px] opacity-30"></div>
+    <div class="absolute top-16 left-[-80px] h-64 w-64 rounded-full bg-orange-500/20 blur-3xl"></div>
+    <div class="absolute bottom-10 right-[-100px] h-80 w-80 rounded-full bg-orange-500/10 blur-3xl"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 z-50 w-full">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav class="mt-3 flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 px-4 py-3 backdrop-blur-md">
+        <a href="index.html" class="index.html" class="flex items-center gap-3 py-1">
+          <img
+            src="/asseets/logo.png"
+            alt="Logo KBOOMDEV"
+            class="h-20 lg:h-24 w-auto object-contain"
+          />
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="text-orange-500">Inicio</a>
+          <a href="servicios.html" class="transition hover:text-orange-500">Servicios</a>
+          <a href="galeria.html" class="transition hover:text-orange-500">Galería</a>
+          <a href="sobre-nosotros.html" class="transition hover:text-orange-500">Sobre nosotros</a>
+          <a href="contacto.html" class="transition hover:text-orange-500">Contacto</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="contacto.html"
+            class="rounded-xl bg-orange-500 px-4 py-2 text-sm font-bold text-black transition hover:scale-105 hover:bg-orange-400"
+          >
+            Agendar reunión
+          </a>
+        </div>
+
+        <button
+          id="menuBtn"
+          class="md:hidden rounded-xl border border-white/10 bg-white/5 p-2 transition hover:border-orange-500 hover:text-orange-500"
+          aria-label="Abrir menú"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </nav>
+
+      <div
+        id="mobileMenu"
+        class="hidden mt-3 rounded-2xl border border-white/10 bg-black/90 p-4 backdrop-blur-md md:hidden"
+      >
+        <div class="flex flex-col gap-3 text-sm">
+          <a href="index.html" class="text-orange-500">Inicio</a>
+          <a href="servicios.html" class="transition hover:text-orange-500">Servicios</a>
+          <a href="galeria.html" class="transition hover:text-orange-500">Galería</a>
+          <a href="sobre-nosotros.html" class="transition hover:text-orange-500">Sobre nosotros</a>
+          <a href="contacto.html" class="transition hover:text-orange-500">Contacto</a>
+          <a
+            href="contacto.html"
+            class="mt-2 rounded-xl bg-orange-500 px-4 py-3 text-center font-bold text-black"
+          >
+            Agendar reunión
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="relative flex min-h-screen items-center pt-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+
+        <!-- Texto -->
+        <div id="heroText" class="translate-y-8 opacity-0">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-xs text-orange-400 sm:text-sm">
+            <span class="h-2 w-2 rounded-full bg-orange-500"></span>
+            Desarrollador Web MERN · KBOOMDEV
+          </div>
+
+          <h1 class="text-4xl font-black leading-tight sm:text-5xl lg:text-7xl">
+            Desarrollo web con
+            <span class="block text-orange-500">identidad, impacto</span>
+            <span class="block text-white">y presencia real</span>
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-base leading-relaxed text-zinc-300 sm:text-lg">
+            Creo páginas web y sistemas web modernos para marcas, negocios y proyectos
+            que necesitan destacar, verse profesionales y generar resultados.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="servicios.html"
+              class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-6 py-4 font-bold text-black transition hover:scale-105 hover:bg-orange-400"
+            >
+              Ver servicios
+            </a>
+
+            <button
+              id="openIntroModal"
+              class="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-6 py-4 font-bold text-white transition hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
+            >
+              Ver presentación
+            </button>
+          </div>
+
+          <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-semibold text-white">Landing pages</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-semibold text-white">Sistemas web</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-semibold text-white">Diseño moderno</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-semibold text-white">Soluciones a medida</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div id="heroVisual" class="translate-y-8 opacity-0">
+          <div class="relative mx-auto max-w-xl">
+            <div class="absolute -inset-6 rounded-[2rem] bg-orange-500/10 blur-2xl"></div>
+
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-950/80 p-6 shadow-2xl">
+              <div class="mb-6 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                  <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                  <span class="h-3 w-3 rounded-full bg-green-400"></span>
+                </div>
+                <span class="text-xs text-zinc-500">kboom.dev</span>
+              </div>
+
+              <div class="space-y-4">
+                <div class="rounded-2xl border border-orange-500/20 bg-orange-500/10 p-4">
+                  <p class="text-sm text-orange-400">Marca personal</p>
+                  <h2 class="mt-2 text-2xl font-extrabold text-white">KBOOMDEV</h2>
+                  <p class="mt-2 text-sm text-zinc-300">
+                    Webs y aplicaciones con estética fuerte, moderna y profesional.
+                  </p>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-zinc-400">Stack</p>
+                    <p class="mt-2 text-lg font-bold text-white">MERN</p>
+                  </div>
+
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-zinc-400">Enfoque</p>
+                    <p class="mt-2 text-lg font-bold text-white">UI + Negocio</p>
+                  </div>
+
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4 sm:col-span-2">
+                    <p class="text-xs uppercase tracking-widest text-zinc-400">Objetivo</p>
+                    <p class="mt-2 text-lg font-bold text-white">
+                      Hacer que tu proyecto se vea serio, moderno y listo para vender.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 flex justify-center">
+                <img
+                  src="/asseets/logo.png"
+                  alt="Logo KBOOMDEV"
+                  class="h-28 lg:h-32 w-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección rápida -->
+    <section class="pb-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div id="quickSection" class="translate-y-8 opacity-0 rounded-[2rem] border border-white/10 bg-white/5 p-6 md:p-10">
+          <div class="grid gap-8 lg:grid-cols-3">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-400">
+                KBOOMDEV
+              </p>
+              <h2 class="mt-3 text-3xl font-black text-white">
+                Una web no solo tiene que verse bien.
+              </h2>
+              <p class="mt-4 text-zinc-300">
+                Tiene que transmitir confianza, mostrar profesionalismo y hacer que
+                tu cliente quiera contactarte.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/40 p-5">
+              <h3 class="text-lg font-bold text-white">Diseño con personalidad</h3>
+              <p class="mt-3 text-sm leading-relaxed text-zinc-300">
+                Nada de plantillas sin alma. La idea es que tu marca tenga presencia propia.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/40 p-5">
+              <h3 class="text-lg font-bold text-white">Desarrollo enfocado en resultados</h3>
+              <p class="mt-3 text-sm leading-relaxed text-zinc-300">
+                Estructura clara, experiencia visual fuerte y enfoque en contacto, ventas y confianza.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div
+    id="introModal"
+    class="pointer-events-none fixed inset-0 z-[60] flex items-center justify-center bg-black/70 px-4 opacity-0 backdrop-blur-sm transition duration-300"
+  >
+    <div class="w-full max-w-2xl scale-95 rounded-[2rem] border border-white/10 bg-zinc-950 p-6 transition duration-300" id="introModalPanel">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-400">
+            Presentación
+          </p>
+          <h3 class="mt-2 text-2xl font-black text-white">
+            KBOOMDEV, desarrollo web con estilo propio
+          </h3>
+        </div>
+
+        <button
+          id="closeIntroModal"
+          class="rounded-xl border border-white/10 bg-white/5 p-2 text-white transition hover:border-orange-500 hover:text-orange-400"
+          aria-label="Cerrar modal"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <p class="mt-5 text-zinc-300 leading-relaxed">
+        Desarrollo páginas web, landing pages y sistemas web con una estética moderna,
+        clara y fuerte. La idea no es solamente “tener una web”, sino que tu proyecto
+        se vea serio, actual y profesional.
+      </p>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+          <p class="text-sm font-bold text-white">Diseño</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+          <p class="text-sm font-bold text-white">Desarrollo</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+          <p class="text-sm font-bold text-white">Presencia digital</p>
+        </div>
+      </div>
+
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="contacto.html"
+          class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-5 py-3 font-bold text-black transition hover:bg-orange-400"
+        >
+          Contactarme
+        </a>
+        <a
+          href="galeria.html"
+          class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
+        >
+          Ver proyectos
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>
