@@ -1,22 +1,48 @@
-<!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  href="https://assets.calendly.com/assets/external/widget.css"
-  rel="stylesheet"
-/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>KBOOMDEV | Contacto</title>
+  <title>KBOOMDEV | Contacto y reuniones</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta
+    name="description"
+    content="Contactá con KBOOMDEV para desarrollar tu página web o sistema web a medida. Podés escribir por email, WhatsApp o agendar una reunión directamente."
+  />
 
-  <!-- CSS oficial de Calendly -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Rubén López - KBOOMDEV" />
+
+  <link rel="canonical" href="https://kboomdev.com/contacto" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto | KBOOMDEV" />
+  <meta
+    property="og:description"
+    content="Hablemos sobre tu proyecto web. Podés agendar una reunión o escribir directamente."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kboomdev.com/contacto" />
+  <meta property="og:image" content="https://kboomdev.com/assets/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contacto | KBOOMDEV" />
+  <meta
+    name="twitter:description"
+    content="Reservá una reunión o escribí para hablar sobre tu proyecto web."
+  />
+  <meta name="twitter:image" content="https://kboomdev.com/assets/preview.jpg" />
+
+  <link rel="icon" href="/asseets/favicon.ico" type="image/x-icon" />
+
+  <!-- Calendly CSS -->
   <link
     href="https://assets.calendly.com/assets/external/widget.css"
     rel="stylesheet"
   />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-black text-white overflow-x-hidden">
@@ -25,7 +51,9 @@
   <!-- FONDO -->
   <!-- ================================ -->
   <div class="fixed inset-0 -z-10 pointer-events-none">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,122,0,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(255,122,0,0.12),transparent_30%)]"></div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,122,0,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(255,122,0,0.12),transparent_30%)]">
+    </div>
   </div>
 
   <!-- ================================ -->
@@ -33,13 +61,10 @@
   <!-- ================================ -->
   <header id="header" class="fixed top-0 left-0 z-50 w-full">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <nav class="mt-3 flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 px-4 py-3 backdrop-blur-md">
+      <nav
+        class="mt-3 flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 px-4 py-3 backdrop-blur-md">
         <a href="index.html" class="flex items-center gap-3 py-1">
-          <img
-            src="/asseets/logo.png"
-            alt="Logo KBOOMDEV"
-            class="h-20 lg:h-24 w-auto object-contain"
-          />
+          <img src="/asseets/logo.png" alt="Logo KBOOMDEV" class="h-20 lg:h-24 w-auto object-contain" />
         </a>
 
         <div class="hidden md:flex items-center gap-8 text-sm font-medium">
@@ -49,7 +74,31 @@
           <a href="sobre-nosotros.html" class="transition hover:text-orange-500">Sobre nosotros</a>
           <a href="contacto.html" class="text-orange-500">Contacto</a>
         </div>
+
+        <button id="menuBtn"
+          class="md:hidden rounded-xl border border-white/10 bg-white/5 p-2 transition hover:border-orange-500 hover:text-orange-500"
+          aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
       </nav>
+
+      <div id="mobileMenu"
+        class="hidden mt-3 rounded-2xl border border-white/10 bg-black/90 p-4 backdrop-blur-md md:hidden">
+        <div class="flex flex-col gap-3 text-sm">
+          <a href="index.html" class="transition hover:text-orange-500">Inicio</a>
+          <a href="servicios.html" class="transition hover:text-orange-500">Servicios</a>
+          <a href="galeria.html" class="transition hover:text-orange-500">Galería</a>
+          <a href="sobre-nosotros.html" class="transition hover:text-orange-500">Sobre nosotros</a>
+          <a href="contacto.html" class="text-orange-500">Contacto</a>
+          <a href="#agenda" class="mt-2 rounded-xl bg-orange-500 px-4 py-3 text-center font-bold text-black">
+            Agendar reunión
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -64,7 +113,8 @@
       <!-- ================================ -->
       <section class="mb-16">
         <div class="max-w-4xl">
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-xs text-orange-400 sm:text-sm">
+          <div
+            class="mb-5 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-xs text-orange-400 sm:text-sm">
             <span class="h-2 w-2 rounded-full bg-orange-500"></span>
             Contacto directo · KBOOMDEV
           </div>
@@ -101,10 +151,8 @@
               rrlopez@kboomdev.com
             </p>
 
-            <a
-              href="mailto:rrlopez@kboomdev.com"
-              class="mt-6 inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400"
-            >
+            <a href="mailto:rrlopez@kboomdev.com"
+              class="mt-6 inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-3 font-bold text-black transition hover:bg-orange-400">
               Enviar correo
             </a>
           </div>
@@ -123,11 +171,8 @@
               Podés escribirme directamente para consultas rápidas.
             </p>
 
-            <a
-              href="https://wa.me/5493815624585"
-              target="_blank"
-              class="mt-6 inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-            >
+            <a href="https://wa.me/5493815624585" target="_blank"
+              class="mt-6 inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
               Abrir WhatsApp
             </a>
           </div>
@@ -146,10 +191,8 @@
               La mejor forma de revisar un proyecto es coordinando una breve reunión.
             </p>
 
-            <a
-              href="#agenda"
-              class="mt-6 inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400"
-            >
+            <a href="#agenda"
+              class="mt-6 inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-3 font-bold text-white transition hover:border-orange-500 hover:text-orange-400">
               Ir a agenda
             </a>
           </div>
@@ -162,7 +205,7 @@
       <!-- ================================ -->
       <section id="agenda" class="mb-20 scroll-mt-32">
         <div class="rounded-[2rem] border border-orange-500/20 bg-orange-500/10 p-6 sm:p-8 md:p-10">
-          
+
           <div class="mb-8 max-w-3xl">
             <p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-400">
               Agenda
@@ -179,10 +222,8 @@
 
           <!-- CONTENEDOR DEL WIDGET -->
           <div class="rounded-[2rem] border border-white/10 bg-black/30 p-2 sm:p-3">
-            <div
-              class="calendly-inline-widget h-[700px] w-full overflow-hidden rounded-[1.5rem] bg-white sm:h-[760px]"
-              data-url="https://calendly.com/rubenlopezrolando?locale=es"
-            ></div>
+            <div class="calendly-inline-widget h-[700px] w-full overflow-hidden rounded-[1.5rem] bg-white sm:h-[760px]"
+              data-url="https://calendly.com/rubenlopezrolando?locale=es"></div>
           </div>
 
         </div>
@@ -198,4 +239,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
