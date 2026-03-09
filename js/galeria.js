@@ -75,7 +75,7 @@ const projectData = {
         "Estructura orientada a captar clientes",
         "Botones de contacto rápido"
       ],
-      link: "#"
+      link: "https://abogadorenegado.netlify.app"
     },
   
   
