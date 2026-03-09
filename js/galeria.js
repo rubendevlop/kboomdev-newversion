@@ -62,6 +62,21 @@ const projectData = {
       ],
       link: "https://ferreteriaeltornillo.netlify.app"
     },
+
+    project5: {
+      title: "El Abogado Renegado",
+      description:
+        "Landing page jurídica diseñada para transmitir autoridad, presencia y una identidad visual fuerte. El sitio presenta los servicios legales, el perfil profesional y facilita el contacto con potenciales clientes.",
+      items: [
+        "Diseño moderno y cinematográfico",
+        "Sección de perfil profesional",
+        "Presentación de áreas legales",
+        "Optimización para dispositivos móviles",
+        "Estructura orientada a captar clientes",
+        "Botones de contacto rápido"
+      ],
+      link: "#"
+    },
   
   
   };
